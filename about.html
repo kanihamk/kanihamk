@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 20px;
+            color: #444;
+        }
+        h1 {
+            text-align: center;
+            color:brown;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .box {
+            background: linear-gradient(135deg,brown, #777);
+            border-radius: 12px;
+            color: white;
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .box h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        .box p {
+            color: #f0f0f5;
+            line-height: 1.8;
+            font-size: 1em;
+            font-weight: 300;
+        }
+        @media (max-width: 768px) {
+            .box {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>About</h1>
+    <div class="container">
+        <div class="box">
+            <h2>Our Vision</h2>
+            <p>We envision a world where everyone, regardless of location or circumstance, is equipped with the knowledge and tools necessary to respond effectively to any disaster.</p>
+        </div>
+        <div class="box">
+            <h2>Our Mission</h2>
+            <p>Our mission is to bridge the gap between awareness and action by providing up-to-date, accurate information, practical advice, and a platform for communication and resource-sharing.</p>
+        </div>
+        <div class="box">
+            <h2>About Us</h2>
+            <p>At our Website, our mission is to empower individuals, families, and communities to be better prepared for natural disasters by offering educational resources, real-time alerts, and enhanced communication channels.</p>
+        </div>
+    </div>
+</body>
+</html>
